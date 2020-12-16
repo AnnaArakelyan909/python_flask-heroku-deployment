@@ -6,6 +6,5 @@ node () {
 	stage ('python_flask_app - Checkout') {
  	 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/AnnaArakelyan909/python_flask-heroku-deployment.git']]])
 	}
-	python c:/script.py".execute()
 }
 }
